@@ -1,0 +1,539 @@
+{
+  "sections": {
+    "16610976770058005a": {
+      "type": "slider",
+      "blocks": {
+        "dd74f294-cc03-4abc-be41-e61ea20679f0": {
+          "type": "image",
+          "settings": {
+            "block_image_picker_pc": "shopify:\/\/shop_images\/IMG_4336.jpg",
+            "block_image_picker_sp": "shopify:\/\/shop_images\/0B2D9194-F785-4383-8C76-7D77794B25B7.png",
+            "my_text1": "",
+            "my_text2": "",
+            "range_bottom": 50,
+            "range_left": 50,
+            "font_color_id": "#ffffff",
+            "url": ""
+          }
+        },
+        "94751e76-c1e6-4aed-a528-b9401f7b84dc": {
+          "type": "image",
+          "settings": {
+            "block_image_picker_pc": "shopify:\/\/shop_images\/095DE469-DE2E-4A41-9C7E-AFD03158627A.png",
+            "block_image_picker_sp": "shopify:\/\/shop_images\/2B7D0E84-6D7A-4365-9619-AA20043D8E14.png",
+            "my_text1": "Animal Casablanca",
+            "my_text2": "",
+            "range_bottom": 11,
+            "range_left": 34,
+            "font_color_id": "#ffffff",
+            "url": "shopify:\/\/pages\/オーダーメイドについて"
+          }
+        }
+      },
+      "block_order": [
+        "dd74f294-cc03-4abc-be41-e61ea20679f0",
+        "94751e76-c1e6-4aed-a528-b9401f7b84dc"
+      ],
+      "settings": {
+        "font-size_pc": 40,
+        "font-size_sp": 20,
+        "mb_size": 31
+      }
+    },
+    "1663993223c9047a8f": {
+      "type": "featured-blog",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "section_read": "",
+        "heading_size": "h1",
+        "blog": "news",
+        "post_limit": 4,
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_image": true,
+        "show_title": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 12,
+        "padding_bottom": 36
+      }
+    },
+    "1661248793d2c1cf14": {
+      "type": "slideshow",
+      "disabled": true,
+      "blocks": {
+        "16612487926797e317-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3.png",
+            "heading": "",
+            "heading_size": "h2",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify:\/\/blogs\/news\/dummy_2",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center",
+            "url": "shopify:\/\/blogs\/news\/dummy"
+          }
+        },
+        "16612487926797e317-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Design.png",
+            "heading": "",
+            "heading_size": "h2",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify:\/\/policies\/privacy-policy",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center",
+            "url": "shopify:\/\/blogs\/news\/dummy_2"
+          }
+        }
+      },
+      "block_order": [
+        "16612487926797e317-0",
+        "16612487926797e317-1"
+      ],
+      "settings": {
+        "layout": "grid",
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "1664323018bd6559ef": {
+      "type": "rich-text",
+      "blocks": {
+        "16643230188a19b95c-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Talk about your brand<\/p>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "16643230188a19b95c-0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 12
+      }
+    },
+    "1664287792bedae10e": {
+      "type": "image-with-text",
+      "blocks": {
+        "1664287792a42228f8-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "1664287792a42228f8-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. <\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "1664287792a42228f8-0",
+        "1664287792a42228f8-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/958D9BDF-563C-4E45-8E43-CDDC2DD1A5AA.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16642974637836a590": {
+      "type": "image-with-text",
+      "blocks": {
+        "16642974635c5163cf-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "16642974635c5163cf-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "16642974635c5163cf-0",
+        "16642974635c5163cf-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/E458892F-DE79-459E-8F35-1583590F8970.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 16
+      }
+    },
+    "166279315526e3fd8c": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "16627931557870ce3e-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "16627931557870ce3e-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "16627931557870ce3e-1",
+        "16627931557870ce3e-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 28
+      }
+    },
+    "1662793256578a490d": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "goods",
+        "products_to_show": 6,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 12,
+        "padding_bottom": 24
+      }
+    },
+    "1660642425da42599a": {
+      "type": "ranking",
+      "settings": {
+        "title": "Ranking",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "subtitle",
+        "collection": "売り上げランキング",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "link",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 48,
+        "padding_bottom": 40
+      }
+    },
+    "1660087651845f9b18": {
+      "type": "collection-list",
+      "blocks": {
+        "1660087651880bef5c-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dog-1"
+          }
+        },
+        "1660087651880bef5c-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cat"
+          }
+        },
+        "1660087651880bef5c-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bird"
+          }
+        },
+        "21bc26f1-2fe7-4e54-91cf-bf28f77be647": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "small-animal"
+          }
+        },
+        "6d166814-4218-43b5-a1f4-1555c393268d": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "reptiles-fish"
+          }
+        },
+        "8a207408-6f9c-4f61-ae6c-4a367769525c": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "fish"
+          }
+        },
+        "7f8d7519-7de6-4b30-b0ba-97ea45609f51": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "goods"
+          }
+        },
+        "9160fa4a-72a6-46ef-9a31-35b8348c28d2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "name"
+          }
+        },
+        "44fc3dda-3874-4c6f-9629-c1fd3ea1c037": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "pattern"
+          }
+        }
+      },
+      "block_order": [
+        "1660087651880bef5c-0",
+        "1660087651880bef5c-1",
+        "1660087651880bef5c-2",
+        "21bc26f1-2fe7-4e54-91cf-bf28f77be647",
+        "6d166814-4218-43b5-a1f4-1555c393268d",
+        "8a207408-6f9c-4f61-ae6c-4a367769525c",
+        "7f8d7519-7de6-4b30-b0ba-97ea45609f51",
+        "9160fa4a-72a6-46ef-9a31-35b8348c28d2",
+        "44fc3dda-3874-4c6f-9629-c1fd3ea1c037"
+      ],
+      "settings": {
+        "title": "Category",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "3",
+        "swipe_on_mobile": false,
+        "padding_top": 24,
+        "padding_bottom": 52
+      }
+    },
+    "1661122622cfdb8a53": {
+      "type": "rich-text",
+      "blocks": {
+        "1661122622b33fed37-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Photo album<\/p>",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "1661122622b33fed37-0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 76,
+        "padding_bottom": 68
+      }
+    },
+    "16610840990fecc81e": {
+      "type": "image-banner",
+      "blocks": {
+        "16610840995bbe1d28-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "お客様からのお写真",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "16610840995bbe1d28-0"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/B3C7B4C6-AECD-435D-A24B-815D5BA9E18A.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "166008757150055680": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "新着商品",
+        "heading_size": "h2",
+        "description": "<p>New Allival<\/p>",
+        "show_description": false,
+        "description_style": "subtitle",
+        "collection": "新着アイテム-1",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 4,
+        "padding_bottom": 16
+      }
+    },
+    "1660088156bcb9e761": {
+      "type": "collapsible-content",
+      "disabled": true,
+      "blocks": {
+        "16600881553eb2cba7-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "16600881553eb2cba7-0"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Collapsible content",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "row",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16628165980673eaa2": {
+      "type": "img-link",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/BF0B4FCE-9FBC-4971-8F49-4CFE98C7456D.png",
+        "font-size_pc": 22,
+        "font-size_sp": 16,
+        "size": 30,
+        "url": "shopify:\/\/blogs\/動物図鑑"
+      }
+    },
+    "16612134218b4be1c3": {
+      "type": "blog-list",
+      "settings": {
+        "title": "News",
+        "blog": "news",
+        "count": 5,
+        "margin_range": 25,
+        "blog_position": "left",
+        "btn_text": "MORE",
+        "btn_position": "center"
+      }
+    }
+  },
+  "order": [
+    "16610976770058005a",
+    "1663993223c9047a8f",
+    "1661248793d2c1cf14",
+    "1664323018bd6559ef",
+    "1664287792bedae10e",
+    "16642974637836a590",
+    "166279315526e3fd8c",
+    "1662793256578a490d",
+    "1660642425da42599a",
+    "1660087651845f9b18",
+    "1661122622cfdb8a53",
+    "16610840990fecc81e",
+    "166008757150055680",
+    "1660088156bcb9e761",
+    "16628165980673eaa2",
+    "16612134218b4be1c3"
+  ]
+}

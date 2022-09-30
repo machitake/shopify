@@ -1,0 +1,174 @@
+<div class="img__link{{ section.id }} page-width">
+    <div class="img__link-container fadeUpTrigger">
+        <a href="{{ section.settings.url }}">
+            <img src="{{ section.settings.image | img_url: 'master'}}" alt="画像イメージ" style="vertical-align: bottom;">
+        </a>
+        {%- for block in section.blocks -%}
+            {%- if block.settings.heading != blank -%}
+                <div class="img__link-content">
+                    {%- case block.type -%}
+                        {%- when 'heading' -%}
+                            <h2>{{ block.settings.heading | escape }}</h2>
+                    {%- endcase -%}
+
+                    {% style %}
+                        .img__link{{ section.id }} .img__link-content {
+                            color: {{ block.settings.font_color_id }};
+                            background: {{ block.settings.bg_color_id }};
+                            border-radius: {{ block.settings.border_radius_size }}px;
+                            padding: {{ block.settings.padding_size_tb }}px {{ block.settings.padding_size_lr }}px;
+                        }
+                        .img__link{{ section.id }} .img__link-content h2{
+                            color: {{ block.settings.font_color_id }};
+                        }
+                    {% endstyle %}
+                </div>
+            {% endif %}
+        {%- endfor -%}
+    </div>
+
+</div>
+
+
+
+{% schema %}
+{
+    "name": "リンク付き画像",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "画像を選択してください"
+        },
+        {
+            "type": "range",
+            "id": "font-size_pc",
+            "min": 16,
+            "max": 80,
+            "step": 1,
+            "label": "PC文字サイズ",
+            "default": 22
+        },
+        {
+            "type": "range",
+            "id": "font-size_sp",
+            "min": 16,
+            "max": 48,
+            "step": 1,
+            "label": "スマホ文字サイズ",
+            "default": 16
+        },
+        {
+            "type": "range",
+            "id": "size",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "label": "上下の余白",
+            "default": 0
+        },
+        {
+            "id": "url",
+            "type": "url",
+            "label": "リンク先を選択してください"
+        }
+    ],
+    "blocks" : [
+    {
+        "type": "heading",
+        "name": "見出し",
+        "limit": 1,
+        "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "default": "Image banner",
+            "label": "テキストを入力してください"
+        },
+        {
+            "type": "color",
+            "id": "font_color_id",
+            "label": "文字の色",
+            "default": "#fff"
+        },
+        {
+            "type": "color",
+            "id": "bg_color_id",
+            "label": "背景の色",
+            "default": "#fff"
+        },
+        {
+            "type": "range",
+            "id": "padding_size_lr",
+            "min": 0,
+            "max": 50,
+            "step": 1,
+            "label": "左右の余白",
+            "default": 0
+        },
+        {
+            "type": "range",
+            "id": "padding_size_tb",
+            "min": 0,
+            "max": 50,
+            "step": 1,
+            "label": "上下の余白",
+            "default": 0
+        },
+        {
+            "type": "range",
+            "id": "border_radius_size",
+            "min": 0,
+            "max": 50,
+            "step": 1,
+            "label": "角の丸み",
+            "default": 0
+        }
+        ]
+    }
+    ],
+
+    "presets":[
+    {
+        "name" : "リンク付き画像",
+        "category": "カスタムパーツ"
+    }
+    
+    ]
+}
+{% endschema %}
+
+{% style %}
+.img__link{{ section.id }} {
+    padding: {{ section.settings.size }}px 0;
+}
+
+.img__link-container {
+    position: relative;
+}
+
+.img__link-container img {
+    width: 100%;
+}
+
+.img__link-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.img__link{{ section.id }} .img__link-content {
+    font-size: {{ section.settings.font-size_pc}}px;
+    line-height: 0;
+}
+.img__link{{ section.id }} .img__link-content h2 {
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .img__link{{ section.id }} .img__link-content {
+        font-size: {{ section.settings.font-size_sp }}px;
+    }
+}
+{% endstyle %}

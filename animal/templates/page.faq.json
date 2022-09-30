@@ -1,0 +1,106 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "166057367667edefc7": {
+      "type": "collapsible-content",
+      "blocks": {
+        "16605736768fc696fd-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "配送料金について",
+            "icon": "question_mark",
+            "row_content": "<p><\/p><p>全国一律(沖縄・離島を除く)<\/p><p>◯円<\/p><p><\/p>",
+            "page": ""
+          }
+        },
+        "16605736768fc696fd-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "注文のキャンセルについて",
+            "icon": "question_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "16605736768fc696fd-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "お支払い方法について",
+            "icon": "question_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "16605736768fc696fd-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "返品について",
+            "icon": "question_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "8d28de6e-9d52-4e6c-80db-33f74c3cd0f2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "d2807f0e-41b4-447d-ae85-56ce6079430c": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "1aa63f16-58ea-4339-8f27-41459a46cc47": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "16605736768fc696fd-0",
+        "16605736768fc696fd-1",
+        "16605736768fc696fd-2",
+        "16605736768fc696fd-3",
+        "8d28de6e-9d52-4e6c-80db-33f74c3cd0f2",
+        "d2807f0e-41b4-447d-ae85-56ce6079430c",
+        "1aa63f16-58ea-4339-8f27-41459a46cc47"
+      ],
+      "settings": {
+        "caption": "よくある質問",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "section",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-1",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "166057367667edefc7"
+  ]
+}

@@ -1,0 +1,159 @@
+<div class="blog page-width">
+
+    <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width title-wrapper--self-padded-tablet-down section-ttl">
+        {%- if section.settings.title != blank -%}
+            <div class="catch">
+                <h2>{{ section.settings.title | escape }}</h2>
+            </div><!-- /.catch -->
+        {%- endif -%}
+    </div>
+
+{% assign blog = blogs[section.settings.blog] %}
+
+    <div class="blog__list">
+        {% for article in blog.articles limit: section.settings.count %}
+            <a href="{{ article.url }}" class="blog__item fadeUpTrigger">
+                <div class="blog__date">{{ article.published_at | date: "%Y年%m月%d日" }}</div>
+                <div class="blog-title">{{ article.title }}</div>
+            </a>
+        {% endfor %}
+    </div>
+
+    <div class="{{ section.settings.btn_position }}">
+        <a class="btn  fadeUpTrigger" href="{{ blog.url }}">{{ section.settings.btn_text }}</a>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "ブログ",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "default": "ブログタイトル",
+            "label": "t:sections.featured-collection.settings.title.label"
+        },
+        {
+            "type": "blog",
+            "id": "blog",
+            "label": "ブログを選択してください"
+        },
+        {
+            "type": "range",
+            "id": "count",
+            "min": 0,
+            "max": 10,
+            "step": 1,
+            "label": "表示するブログ数",
+            "default": 3
+        },
+        {
+            "type": "range",
+            "id": "margin_range",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "label": "上下の余白",
+            "default": 30
+        },
+        {
+            "type": "select",
+            "id": "blog_position",
+            "options": [
+                {
+                "value": "left",
+                "label": "左"
+                },
+                {
+                "value": "center",
+                "label": "中央"
+                },
+                {
+                "value": "right",
+                "label": "右"
+                }
+            ],
+            "default": "left",
+            "label": "表示する位置"
+        },
+        {
+            "type": "header",
+            "content": "ボタンの編集"
+        },
+        {
+            "type": "text",
+            "id": "btn_text",
+            "default": "全てを表示する",
+            "label": "テキスト"
+        },
+        {
+            "type": "select",
+            "id": "btn_position",
+            "options": [
+                {
+                "value": "left",
+                "label": "左"
+                },
+                {
+                "value": "center",
+                "label": "中央"
+                },
+                {
+                "value": "right",
+                "label": "右"
+                }
+            ],
+            "default": "right",
+            "label": "表示する位置"
+        }
+    ],
+
+    "presets":[
+    {
+        "name" : "ブログ",
+        "category": "カスタムパーツ"
+    }
+    
+    ]
+}
+{% endschema %}
+
+{% style %}
+    .blog {
+        margin: {{ section.settings.margin_range }}px auto;
+        padding: 50px;
+    }
+  
+   .blog-title {
+      margin-top: 30px;
+   }
+
+  .blog__date {
+    margin-top: 30px;
+  }
+  
+
+    .blog__item {
+        display: flex;
+        justify-content: {{ section.settings.blog_position }};
+        gap: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        text-decoration: none;
+        color: #080808;
+        border-bottom: solid #e6e5e5;
+        border-width: thin;
+    }
+
+    @media (max-width: 767px) {
+        .blog {
+            padding: 0 1.5rem;
+        }
+
+        .blog__item {
+            font-size: 13px;
+        }
+        
+    }
+{% endstyle %}

@@ -1,0 +1,298 @@
+<div class="fv-container">
+    <div class="swiper">
+        <div class="swiper-wrapper fv__list{{ section.id }}">
+            {% for block in section.blocks %}
+                <div class="swiper-slide fv__item">
+                  <a href="{{ block.settings.url }}">
+                        <picture>
+                            <source srcset="{{ block.settings.block_image_picker_sp | img_url: 'master'}}" media="(max-width: 768px)"/>
+                            <img src="{{ block.settings.block_image_picker_pc | img_url: 'master'}}" class="fv__item-img" style="vertical-align: bottom;">
+                        </picture>
+                  </a>
+                            
+                    {% if block.settings.my_text1 != blank or block.settings.my_text2 != blank or block.settings.my_text3 != blank or block.settings.my_btn_text1 != blank or block.settings.btn_link != blank or block.settings.block_image_picker_logo != blank %}
+                        <div class="fv__content fv__content{{ block.id }} fadeUp">
+                            <p class="fv__txt">
+                                {% if block.settings.my_text1 != blank %}
+                                    {{ block.settings.my_text1 }}<br>
+                                {% endif %}
+                                {% if block.settings.my_text2 != blank %}
+                                    {{ block.settings.my_text2 }}<br>
+                                {% endif %}
+                            </p>
+                        </div>
+                    {% endif %}
+                </div>
+
+                {% style %}
+                    .fv__content{{ block.id }} {
+                        bottom: {{ block.settings.range_bottom }}%;
+                        left: {{ block.settings.range_left }}%;
+                    }
+
+                    .fv__content{{ block.id }} p {
+                        color: {{ block.settings.font_color_id }};
+                        margin : 0;
+                    }
+                {% endstyle %}
+                
+
+            {% endfor %}
+
+        </div>
+        <!-- ページネーション -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+</div><!-- /.fv-container -->
+
+{% schema %}
+{
+    "name": "スライダー",
+    "settings": [
+        {
+            "type": "range",
+            "id": "font-size_pc",
+            "min": 16,
+            "max": 80,
+            "step": 1,
+            "label": "PC文字サイズ",
+            "default": 22
+        },
+        {
+            "type": "range",
+            "id": "font-size_sp",
+            "min": 16,
+            "max": 48,
+            "step": 1,
+            "label": "スマホ文字サイズ",
+            "default": 16
+        },
+        {
+            "type": "range",
+            "id": "mb_size",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "label": "下の余白",
+            "default": 1
+        }
+    ],
+    "blocks" : [
+    {
+        "type": "image",
+        "name": "スライダーの画像",
+        "settings": [
+        {
+            "type": "image_picker",
+            "id": "block_image_picker_pc",
+            "label": "PC用画像の選択"
+        },
+        {
+            "type": "image_picker",
+            "id": "block_image_picker_sp",
+            "label": "スマホ用画像の選択"
+        },
+        {
+            "type": "text",
+            "id": "my_text1",
+            "label": "テキスト１"
+        },
+        {
+            "type": "text",
+            "id": "my_text2",
+            "label": "テキスト２"
+        },
+        {
+            "type": "range",
+            "id": "range_bottom",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "label": "下からの位置",
+            "default": 50
+        },
+        {
+            "type": "range",
+            "id": "range_left",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "label": "左からの位置",
+            "default": 50
+        },
+        {
+            "type": "color",
+            "id": "font_color_id",
+            "label": "文字の色",
+            "default": "#fff"
+        },
+        {
+            "id": "url",
+            "type": "url",
+            "label": "リンク先を選択してください"
+        }
+        ]
+    }
+    ],
+
+    "presets":[
+    {
+        "name" : "スライダー",
+        "category": "カスタムパーツ"
+    }
+    
+    ]
+}
+{% endschema %}
+
+
+{% style %}
+    .fv-container {
+        margin-bottom: {{ section.settings.mb_size }}px;
+    }
+    
+    .fv__list{{ section.id }} .fv__content {
+        text-align: center; 
+        font-size: {{ section.settings.font-size_pc }}px;;
+        z-index: 999;
+        position: absolute;
+    }
+
+    .fv__item {
+        position: relative;
+    }
+    
+    .fv-container {
+        position: relative;
+    }
+    
+    .fv__item-img {
+        -o-object-fit: cover;
+        width: 100%;
+        height:  88vh;
+        object-fit: cover;
+    }
+    
+    .fv__content {
+        position: absolute;
+        text-align: center; 
+        z-index: 999;
+    }
+    
+    .fv__txt:not(:first-child) {
+        padding-top: 20px;
+    }
+    
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+        color: #333;
+    }
+    
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        border: 2px solid #fff;
+        background-color: transparent;
+        opacity: 1;
+    }
+    
+    .swiper-pagination-bullet-active {
+        background-color: #fff;
+    }
+    
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        right: 30px;
+        bottom: 10px;
+        left: inherit;
+        width: auto;
+    }
+    
+    @media (max-width: 767px) {
+        .fv__list{{ section.id }} .fv__content {
+            font-size: {{ section.settings.font-size_sp }}px;;
+        }
+    }
+
+    /* アニメーション */
+    .fadeUp {
+        opacity: 0;
+    }
+    
+    .swiper-slide-active .fv__item-img {
+        -webkit-animation: animationZoomOut 2s ease;
+        animation: animationZoomOut 2s ease;
+    }
+    
+    .swiper-slide-active .fadeUp {
+        -webkit-animation-name: fadeUpAnime;
+        -webkit-animation-duration: 4.5s;
+        -webkit-animation-fill-mode: forwards;
+        -webkit-animation-delay: 0.5s;
+        animation-duration: 4.5s;
+        animation-delay: 0.5s;
+        animation-fill-mode: forwards;
+        animation-name: fadeUpAnime;
+        opacity: 0;
+    }
+    
+    
+    @-webkit-keyframes animationZoomOut {
+        0% {
+            transform: scale(1.1);
+        }
+    }
+        
+    @keyframes animationZoomOut {
+        0% {
+            transform: scale(1.1);
+        }
+    }
+    
+    @-webkit-keyframes fadeUpAnime {
+        0% {
+            transform: translate(-50% , 100%);
+            opacity: 0;
+        }
+    
+        30% {
+            transform: translate(-50% , 50%);
+            opacity: 1;
+        }
+    
+        60% {
+            transform: translate(-50% , 50%);
+            opacity: 1;
+        }
+    
+        100% {
+            transform: translate(-50% , 100%);
+            opacity: 0;
+        }
+    }
+    
+    @keyframes fadeUpAnime {
+        0% {
+            transform: translate(-50% , 100%);
+            opacity: 0;
+        }
+    
+        30% {
+            transform: translate(-50% , 50%);
+            opacity: 1;
+        }
+    
+        60% {
+            transform: translate(-50% , 50%);
+            opacity: 1;
+        }
+    
+        100% {
+            transform: translate(-50% , 100%);
+            opacity: 0;
+        }
+    }
+{% endstyle %}
